@@ -8,7 +8,6 @@ RUN apt install curl unzip -y
 RUN curl https://bun.sh/install | bash
 
 COPY package.json .
-COPY bun.lockb .
 
 RUN /root/.bun/bin/bun install
 
