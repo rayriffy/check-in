@@ -1,7 +1,9 @@
-import { Scanner } from "$scanner";
 import { useEventAtom } from "$events/eventAtom.ts";
 import { EventSelector } from "$events";
 import { Form } from "$form";
+import { lazy, Suspense } from "react";
+
+const Scanner = lazy(() => import("$scanner"));
 
 const App = () => {
   const event = useEventAtom();
@@ -10,7 +12,9 @@ const App = () => {
 
   return (
     <main className={"relative w-screen h-[100dvh]"}>
-      <Scanner />
+      <Suspense fallback={<div />}>
+        <Scanner />
+      </Suspense>
       <Form />
     </main>
   );

@@ -5,7 +5,7 @@ import { Fragment } from "react";
 import { Icon } from "react-iconify-icon-wrapper";
 import { scannedAtom } from "$scanner/scannedAtom.ts";
 
-export const Scanner = () => {
+const Scanner = () => {
   const { device, onChange } = useDevices();
 
   // return (
@@ -60,3 +60,5 @@ export const Scanner = () => {
     </Fragment>
   );
 };
+
+export default Scanner;
