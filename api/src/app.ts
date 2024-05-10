@@ -5,7 +5,7 @@ import { checkinHandler } from "./handlers/checkinHandler";
 import { ticketHandler } from "./handlers/ticketHandler";
 
 export const app = new Elysia({
-  prefix: "/event",
+  prefix: "/",
 })
   .get("/ticket", ({ query }) => ticketHandler(query), {
     query: ticketSchema,
