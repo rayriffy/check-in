@@ -1,7 +1,7 @@
 import type { Static } from "elysia";
 
 import { checkinSchema } from "../models";
-import { stampTicket, unstampTicket } from "../externals/eventpop";
+import { stampTicket } from "../externals/eventpop";
 import { collections } from "../database/mongo";
 
 export const checkinHandler = async ({
