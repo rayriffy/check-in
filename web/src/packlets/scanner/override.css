@@ -1,0 +1,3 @@
+#root > main > div:nth-child(2) > svg {
+  display: none;
+}
