@@ -5,19 +5,19 @@ import { lazy, Suspense } from "react";
 
 const Scanner = lazy(() => import("$scanner"));
 
-const App = () => {
+const Page = () => {
   const event = useEventAtom();
 
-  if (!event) return <EventSelector />;
+  if (!event) return <EventSelector/>;
 
   return (
     <main className={"relative w-screen h-[100dvh]"}>
-      <Suspense fallback={<div />}>
-        <Scanner />
+      <Suspense fallback={<div/>}>
+        <Scanner/>
       </Suspense>
-      <Form />
+      <Form/>
     </main>
   );
 };
 
-export default App;
+export default Page;
