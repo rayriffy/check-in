@@ -1,6 +1,6 @@
 import { Static } from "elysia";
 import { ticketSchema } from "../models";
-import { getTicket } from "../externals/eventpop";
+import { getTicket } from "../externals/stamper";
 import { ticketMapper } from "../functions/ticketMapper";
 
 export const ticketHandler = async ({

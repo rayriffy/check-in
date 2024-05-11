@@ -1,8 +1,8 @@
-import { EventpopTicket, Ticket } from "../types";
+import { StamperTicket, Ticket } from "../types";
 
-export const ticketMapper = (eventpopTicket: EventpopTicket): Ticket => ({
-  ref: eventpopTicket.reference_code,
-  firstname: eventpopTicket.firstname,
-  lastname: eventpopTicket.lastname,
-  status: eventpopTicket.status,
+export const ticketMapper = (stamperTicket: StamperTicket): Ticket => ({
+  ref: stamperTicket.reference_code,
+  firstname: stamperTicket.firstname,
+  lastname: stamperTicket.lastname,
+  status: stamperTicket.status,
 });

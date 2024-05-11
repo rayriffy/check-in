@@ -1,7 +1,7 @@
 import type { Static } from "elysia";
 
 import { checkinSchema } from "../models";
-import { stampTicket } from "../externals/eventpop";
+import { stampTicket } from "../externals/stamper";
 import { collections } from "../database/mongo";
 
 export const checkinHandler = async ({
@@ -15,10 +15,10 @@ export const checkinHandler = async ({
     log("checkin:start");
 
     const stampedTicket = await stampTicket(event, ticket);
-    log("eventpop:stamped");
+    log("stamper:stamped");
 
     if (stampedTicket.tickets.length === 0) {
-      log("eventpop:already-stamped");
+      log("stamper:already-stamped");
       throw new Error("Already checked in");
     }
 
@@ -56,7 +56,7 @@ export const checkinHandler = async ({
     log("checkin:failed");
 
     // await unstampTicket(event, ticket);
-    // log("eventpop:unstamped");
+    // log("stamper:unstamped");
 
     if (error instanceof Error) throw error;
     else throw new Error("Try again later");

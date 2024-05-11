@@ -7,7 +7,7 @@ export interface Ticket {
   status: TicketStatus;
 }
 
-export interface EventpopTicket {
+export interface StamperTicket {
   id: number;
   order_id: number;
   status: TicketStatus;
@@ -33,17 +33,17 @@ export interface EventpopTicket {
 
 export interface GetTicketsResponse {
   time: string;
-  tickets: EventpopTicket[];
+  tickets: StamperTicket[];
 }
 
 export interface GetTicketResponse {
-  ticket: EventpopTicket | null;
+  ticket: StamperTicket | null;
 }
 
 export interface StampResponse {
-  tickets: EventpopTicket[];
+  tickets: StamperTicket[];
   failed_messages?: string[];
-  used_tickets: EventpopTicket[];
+  used_tickets: StamperTicket[];
 }
 
 export interface AgodaBadge {

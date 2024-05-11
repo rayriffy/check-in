@@ -3,7 +3,7 @@ export { TicketStatus } from "./constants";
 export type { API } from "./app";
 export type {
   Ticket,
-  EventpopTicket,
+  StamperTicket,
   GetTicketResponse,
   GetTicketsResponse,
   StampResponse,

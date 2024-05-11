@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d0f4ee38-537c-435a-8049-8f7e37a7d330" name="Changes" comment="chore: staged changes" />
+    <list default="true" id="d0f4ee38-537c-435a-8049-8f7e37a7d330" name="Changes" comment="chore: change page title">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -89,6 +91,10 @@
       <workItem from="1715345961568" duration="7849000" />
       <workItem from="1715363015606" duration="467000" />
       <workItem from="1715363549099" duration="324000" />
+      <workItem from="1715363875982" duration="106000" />
+      <workItem from="1715364058325" duration="516000" />
+      <workItem from="1715364679308" duration="36000" />
+      <workItem from="1715374579426" duration="400000" />
     </task>
     <task id="LOCAL-00001" summary="feat: initial commit">
       <option name="closed" value="true" />
@@ -106,7 +112,31 @@
       <option name="project" value="LOCAL" />
       <updated>1715363443339</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="chore: staged changes">
+      <option name="closed" value="true" />
+      <created>1715363900537</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1715363900537</updated>
+    </task>
+    <task id="LOCAL-00004" summary="fix: types">
+      <option name="closed" value="true" />
+      <created>1715363952160</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1715363952160</updated>
+    </task>
+    <task id="LOCAL-00005" summary="chore: change page title">
+      <option name="closed" value="true" />
+      <created>1715364710953</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1715364710953</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -115,6 +145,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat: initial commit" />
     <MESSAGE value="chore: staged changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="chore: staged changes" />
+    <MESSAGE value="fix: types" />
+    <MESSAGE value="chore: change page title" />
+    <option name="LAST_COMMIT_MESSAGE" value="chore: change page title" />
   </component>
 </project>

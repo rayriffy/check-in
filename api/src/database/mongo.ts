@@ -9,10 +9,10 @@ declare global {
 }
 
 const {
-  EVENTPOPPER_DATABASE_URL = "mongodb://johndoe:randompassword@localhost",
+  POPPER_DATABASE_URL = "mongodb://johndoe:randompassword@localhost",
 } = process.env;
 
-export const mongo = global.mongo || new MongoClient(EVENTPOPPER_DATABASE_URL);
+export const mongo = global.mongo || new MongoClient(POPPER_DATABASE_URL);
 
 if (process.env.NODE_ENV !== "production") global.mongo = mongo;
 
