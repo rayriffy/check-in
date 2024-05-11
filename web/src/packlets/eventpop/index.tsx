@@ -1,6 +1,8 @@
 import { useTicket } from "$eventpop/useTicket.ts";
 import { useEventAtom } from "$events/eventAtom.ts";
 import { useScannedAtom } from "$scanner/scannedAtom.ts";
+import { TicketStatus } from "@check-in/api/src";
+import clsx from "clsx";
 
 export const Eventpop = () => {
   const { eventpopId } = useEventAtom()!;
@@ -17,9 +19,14 @@ export const Eventpop = () => {
         </h1>
       ) : (
         <div className={"uppercase"}>
-          <div className="flex justify-between">
-            <h1 className={"text-xl font-bold pb-2"}>#{data.ref}</h1>
-            <span>{data.status}</span>
+          <div className="flex justify-between items-center pb-2">
+            <h1 className={"text-xl font-bold"}>#{data.ref}</h1>
+            <span
+              className={clsx(
+                "text-white text-sm py-1 px-2",
+                data.status === TicketStatus.Active ? 'bg-green-500' : 'bg-red-500'
+              )}
+            >{data.status}</span>
           </div>
           <h2 className={"text-3xl line-clamp-1"}>{data.firstname}</h2>
           <h2 className={"text-3xl line-clamp-1"}>{data.lastname}</h2>

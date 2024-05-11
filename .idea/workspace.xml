@@ -4,8 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d0f4ee38-537c-435a-8049-8f7e37a7d330" name="Changes" comment="chore: change page title">
+    <list default="true" id="d0f4ee38-537c-435a-8049-8f7e37a7d330" name="Changes" comment="refactor: naming">
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bun.lockb" beforeDir="false" afterPath="$PROJECT_DIR$/bun.lockb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/web/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/packlets/eventpop/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/packlets/eventpop/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/packlets/eventpop/useTicket.ts" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/packlets/eventpop/useTicket.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,6 +100,7 @@
       <workItem from="1715364058325" duration="516000" />
       <workItem from="1715364679308" duration="36000" />
       <workItem from="1715374579426" duration="400000" />
+      <workItem from="1715413657429" duration="1185000" />
     </task>
     <task id="LOCAL-00001" summary="feat: initial commit">
       <option name="closed" value="true" />
@@ -136,7 +142,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715364710953</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="refactor: naming">
+      <option name="closed" value="true" />
+      <created>1715413887615</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1715413887615</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -147,6 +161,7 @@
     <MESSAGE value="chore: staged changes" />
     <MESSAGE value="fix: types" />
     <MESSAGE value="chore: change page title" />
-    <option name="LAST_COMMIT_MESSAGE" value="chore: change page title" />
+    <MESSAGE value="refactor: naming" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor: naming" />
   </component>
 </project>
