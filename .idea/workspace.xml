@@ -4,14 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d0f4ee38-537c-435a-8049-8f7e37a7d330" name="Changes" comment="fix: not allow used ticket to proceed">
-      <change afterPath="$PROJECT_DIR$/web/src/pages/check-in/log.tsx" afterDir="false" />
+    <list default="true" id="d0f4ee38-537c-435a-8049-8f7e37a7d330" name="Changes" comment="feat: setup router">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bun.lockb" beforeDir="false" afterPath="$PROJECT_DIR$/bun.lockb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/web/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/pages/check-in/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/vite.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/web/vite.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/packlets/scanner/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/packlets/scanner/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,28 +43,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "javascript.nodejs.core.library.configured.version": "20.9.0",
-    "javascript.nodejs.core.library.typings.version": "20.9.5",
-    "last_opened_file_path": "/Users/rayriffy/Git/check-in",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.standard": "true",
-    "node.js.detected.package.stylelint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.standard": "",
-    "node.js.selected.package.stylelint": "",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_interpreter_path": "node",
-    "nodejs_package_manager_path": "pnpm",
-    "prettierjs.PrettierConfiguration.Package": "/Users/rayriffy/Library/pnpm/global/5/.pnpm/prettier@3.2.5/node_modules/prettier",
-    "settings.editor.selected.configurable": "actions.on.save",
-    "ts.external.directory.path": "/Users/rayriffy/Git/check-in/node_modules/typescript/lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;20.9.0&quot;,
+    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;20.9.5&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/rayriffy/Git/check-in&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.stylelint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.stylelint&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;pnpm&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/rayriffy/Library/pnpm/global/5/.pnpm/prettier@3.2.5/node_modules/prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;actions.on.save&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/rayriffy/Git/check-in/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="ReactDesignerToolWindowState">
     <option name="myId2Visible">
       <map>
@@ -113,7 +108,13 @@
       <workItem from="1715413657429" duration="1185000" />
       <workItem from="1715414851073" duration="356000" />
       <workItem from="1715415367463" duration="19000" />
-      <workItem from="1715415448893" duration="921000" />
+      <workItem from="1715415448893" duration="1065000" />
+      <workItem from="1715875962284" duration="1957000" />
+      <workItem from="1715921594160" duration="687000" />
+      <workItem from="1715931583581" duration="1818000" />
+      <workItem from="1715940199012" duration="36000" />
+      <workItem from="1715945700169" duration="4000" />
+      <workItem from="1716007958448" duration="857000" />
     </task>
     <task id="LOCAL-00001" summary="feat: initial commit">
       <option name="closed" value="true" />
@@ -171,11 +172,38 @@
       <option name="project" value="LOCAL" />
       <updated>1715415068787</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="feat: setup router">
+      <option name="closed" value="true" />
+      <created>1715416465274</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1715416465274</updated>
+    </task>
+    <task id="LOCAL-00009" summary="feat: setup router">
+      <option name="closed" value="true" />
+      <created>1715416489727</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1715416489727</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat: initial commit" />
@@ -184,6 +212,7 @@
     <MESSAGE value="chore: change page title" />
     <MESSAGE value="refactor: naming" />
     <MESSAGE value="fix: not allow used ticket to proceed" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: not allow used ticket to proceed" />
+    <MESSAGE value="feat: setup router" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: setup router" />
   </component>
 </project>

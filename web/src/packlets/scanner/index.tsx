@@ -4,6 +4,7 @@ import { useDevices } from "$scanner/useDevices.ts";
 import { Fragment } from "react";
 import { Icon } from "react-iconify-icon-wrapper";
 import { scannedAtom } from "$scanner/scannedAtom.ts";
+import { inputAtom } from '$form/inputAtom.ts'
 
 const Scanner = () => {
   const { device, onChange } = useDevices();
@@ -35,7 +36,11 @@ const Scanner = () => {
         </button>
       </div>
       <QRScanner
-        onResult={(res) => scannedAtom.set(res)}
+        onResult={(res) => {
+          console.log('scan')
+          inputAtom.set({})
+          scannedAtom.set(res)
+        }}
         styles={{
           container: {
             width: "100vw",
